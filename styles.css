@@ -86,7 +86,7 @@
   background-color: #ffffff;
   color: var(--text-dark);
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -376,12 +376,6 @@
   transform: translateY(-4px);
 }
 
-.passion-card-icon {
-  font-size: 2rem;
-  margin-bottom: 12px;
-  display: block;
-}
-
 .passion-editorial-card h4 {
   font-family: var(--font-display);
   font-size: 1.3rem;
@@ -614,6 +608,24 @@
     display: block;
   }
 
+  /* CENTER & MINIMIZE PORTFOLIO HERO BANNER ON MOBILE */
+  .editorial-hero-banner {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+  }
+
+  .magazine-title-underlay {
+    font-size: clamp(2.0rem, 10.5vw, 3.4rem);
+    letter-spacing: 0.04em;
+    line-height: 0.95;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .hero-editorial-content,
   .education-editorial-grid,
   .selected-works-dark-grid {
@@ -622,18 +634,23 @@
 
   .hero-left-column {
     padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero-editorial-divider {
+    margin: 0 auto 16px auto;
   }
 
   .hero-portrait-clean-box {
     margin: 10px auto 0 auto;
     justify-content: center;
     align-items: center;
-    max-width: 360px;
+    max-width: 320px;
   }
 
   .hero-portrait-clean-box img {
     transform: none;
-    max-height: 420px;
+    max-height: 380px;
     margin: 0 auto;
   }
 
@@ -667,34 +684,42 @@
     padding: 8px 0;
   }
 
-  /* HERO BANNER & PORTFOLIO TITLE */
+  /* MINIMIZE & PERFECTLY CENTER PORTFOLIO TITLE ON MOBILE SCREEN */
   .editorial-hero-banner {
-    padding-bottom: 10px;
-    margin-bottom: 16px;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+    justify-content: center;
   }
 
   .magazine-title-underlay {
-    font-size: clamp(2.8rem, 15.5vw, 4.8rem);
-    letter-spacing: -0.01em;
-    line-height: 0.9;
+    font-size: clamp(1.9rem, 9.5vw, 3.0rem);
+    letter-spacing: 0.05em;
+    line-height: 1.0;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
   }
 
   /* HERO LEFT COLUMN TYPOGRAPHY */
   .hero-subtitle-tag {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   .hero-left-column h2 {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     line-height: 1.15;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    text-align: center;
   }
 
   .hero-bio-paragraph {
-    font-size: 0.98rem;
+    font-size: 0.95rem;
     line-height: 1.65;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   /* FULL WIDTH MOBILE BUTTONS */
@@ -714,12 +739,12 @@
 
   /* MOBILE PORTRAIT CUTOUT FIT */
   .hero-portrait-clean-box {
-    max-width: 300px;
+    max-width: 280px;
     margin-top: 10px;
   }
 
   .hero-portrait-clean-box img {
-    max-height: 350px;
+    max-height: 330px;
   }
 
   /* CARDS & PADDING */
@@ -738,15 +763,15 @@
   }
 
   .editorial-section-header h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .editorial-section-num {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .exp-editorial-role {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .pdf-iframe-container {
