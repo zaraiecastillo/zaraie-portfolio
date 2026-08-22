@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+
+:root {
+  /* EDITORIAL LUXURY COLOR PALETTE */
+  --bg-warm-cream: #F7F3EE;
+  --bg-card-light: #FFFFFF;
+  --bg-card-subtle: #F0ECE6;
+  --bg-dark-block: #121212;
+
+  --text-dark: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-muted: #8C857B;
+  --text-light: #F7F3EE;
+  --text-light-muted: #A39D93;
+
+  --gold-accent: #C5AA80;
+  --gold-bronze: #A68A56;
+  --gold-champagne: #E6D7C3;
+
+  --font-display: 'Bodoni Moda', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-bebas: 'Bebas Neue', cursive;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-warm-cream);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* LUXURY BUTTON STYLES */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-dark {
+  background: var(--text-dark);
+  color: var(--bg-warm-cream);
+  border: 1px solid var(--text-dark);
+}
+
+.btn-dark:hover {
+  background: var(--gold-bronze);
+  border-color: var(--gold-bronze);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.btn-gold-outline {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--gold-bronze);
+}
+
+.btn-gold-outline:hover {
+  background: var(--text-dark);
+  color: var(--bg-warm-cream);
+  border-color: var(--text-dark);
+  transform: translateY(-2px);
+}
